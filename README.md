@@ -98,9 +98,9 @@ This repository's module runs only on Linux. An independent project,
 (GPL-2.0), performs a comparable pre-driver PLM/speed-select transaction from a
 UEFI application on removable media, before any operating system starts, and
 then chain-loads the machine's normal boot manager (Windows Boot Manager, GRUB,
-systemd-boot, ...). It routes by chip family — RTX 20, 30 and 40; GTX 16 is
-theoretically compatible pending hardware verification — with its own
-per-device evidence tiers, matched benchmarks and a limitations list, and the
+systemd-boot, ...). It routes by chip family — GTX 16 (verified on TU117),
+RTX 20, 30 and 40 — with its own per-device evidence tiers, matched benchmarks
+and a limitations list, and the
 override is volatile (replayed each boot, cleared by power loss). It is an
 independent project with its own security model; linking it here does not
 extend this module's supported targets.
